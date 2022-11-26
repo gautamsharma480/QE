@@ -21,7 +21,7 @@ allocate (posxyz_angs(natm,3))
 open (unit=100, file='coordinate_x.dat') ! Create x-coordinates to read as input
 open (unit=200, file='coordinate_y.dat') ! same for y
 open (unit=300, file='coordinate_z.dat') ! same for z
-open (unit=400, file='atom_name.dat')
+open (unit=400, file='atom_name.dat')    ! Give list of elements' name.
 do j=1,natm
  read(100,*) posxyz(j,1) 
  read(200,*) posxyz(j,2)
